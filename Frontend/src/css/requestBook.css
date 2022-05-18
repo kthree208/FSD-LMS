@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  .request-book-heading {
+      /* align-self: left; */
+      font-weight: bolder;
+      text-align: left;
+      margin-left: 5vw;
+    margin-top: 5vw;
+      
+  }
+
+
+.bookLabel{
+    display: inline-block !important;
+    min-width: 150px !important;
+    /* background-color: aquamarine; */
+    text-align: center;
+    /* font-weight: bold; */
+    font-size: 22px;
+    font-family: 'Orelega One', cursive;
+}
+.submitBtn{
+  background-color:black;
+  color: white;
+  margin-top: 2em;
+  margin-left: 6em;
+  /* width: 22em; */
+  /* border-radius: 25px; */
+  /* font-family: 'Orelega One', cursive;
+  font-weight: lighter; */
+}
+
+.submitBtn:hover{
+  background-color: white;
+  color: black;
+  margin-top: 2em;
+  margin-left: 6em;
+  border-color:black;
+  box-shadow: 10px 10px black;
+}
+.reqbook{
+    filter:none;
+    height: 400px;
+    width:400px;
+    float: right;
+    margin-top: -250px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px black;
+}
+.form{
+  margin: 100px 0 0 20px;
+}

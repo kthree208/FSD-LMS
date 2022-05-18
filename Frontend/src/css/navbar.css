@@ -1,0 +1,39 @@
+.logo {
+    display: inline;
+    background-image: url("../assets/logo.png");
+    background-repeat:no-repeat ;
+    background-size: 160px 45px;
+    height: 100px;
+    width: 200px;
+    z-index: 5;
+    margin-bottom: -80px;
+    margin-left: 10px;
+}
+
+.navbarBtn {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: -5px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 10px ;
+}
+
+.navbarBtn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #F19100;
+    transition: width .3s;
+    margin-top: -2px;
+}
+.navbarBtn:hover {
+    color: white;    
+}
+
+.navbarBtn:hover::after {
+    width: 110%;
+    padding-bottom: 1px;
+    /* //transition: width .3s; */
+}

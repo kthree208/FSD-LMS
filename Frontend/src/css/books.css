@@ -1,0 +1,31 @@
+
+.navbar{
+    border-radius: 2em;
+   
+}
+.main{
+    /* margin: 20px 0px 20px 0px; */
+    border-radius: 2em;
+    width: 73vw;
+    height: 53vw;
+    background-color: white;
+    position: relative;
+    right: 0;
+    top:50px;
+    left:0;
+    padding-left: 10px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    padding: 20px;
+    overflow: scroll;
+}
+.main::-webkit-scrollbar { width: 0 !important }
+.edges {
+    float:right;
+    flex:1;
+    position: absolute;
+    left: 25vw ;
+    right: 2vw;
+    top:-2vw;
+    bottom: 2vw;
+    border-radius: 0.5em;
+}

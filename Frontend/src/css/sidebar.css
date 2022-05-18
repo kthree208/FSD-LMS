@@ -1,0 +1,146 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ul{
+    padding-left: 0;
+  }
+  body{
+    background: #f5f6fa;
+  }
+   */
+.wrapperS .sidebar {
+  /* background: #212529; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25vw;
+  height: 100%;
+  padding: 20px 0;
+  background-color:#101010;
+  color: white;
+
+}
+
+.wrapperS .sidebar ul li {
+  display: block;
+  padding: 8px 40px;
+  /* color: rgb(241, 237, 237); */
+
+  font-size: 20px;
+  position: relative;
+  border-radius: 0.6em;
+  background-color: #101010;
+  border-style: none;
+  width: 90%;
+  margin-left: -25px;
+  text-align: left;
+
+}
+
+/* .wrapper .sidebar ul li button .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+  } */
+
+.profileDetails {
+  margin-top: 2rem;
+}
+
+.profileImageDiv {
+  position: fixed;
+}
+
+.notifications {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #dc3434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -12px;
+  right: 100px;
+}
+
+.userCard {
+  text-align: left;
+  padding-top: 5vw; 
+  /* 20,10 */
+  padding-left: 4.5vw;
+  padding-bottom: 4vw;
+}
+
+.userName {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+
+.userEmail {
+  margin-top: -0.7rem;
+  opacity: 0.5;
+
+}
+
+.wrapperS .sidebar ul li a:hover,
+.wrapperS .sidebar ul li a.active {
+  color: white;
+  /* background: #0d6efd; */
+  font-weight: 600;
+  /* font-size: 30px; */
+  opacity: 1;
+  display: block;
+
+}
+
+.wrapperS .sidebar ul li button:hover .icon,
+.wrapperS .sidebar ul li button.active .icon {
+  color: white;
+}
+
+.wrapperS .sidebar ul li button:hover:before,
+.wrapperS .sidebar ul li button.active:before {
+  display: block;
+}
+
+/* .sidebar .line {
+  height: 1px;
+  width: 220px;
+  background-color: grey;
+  margin: 15px 0px 20px 14px;
+} */
+
+/* .wrapper .sidebar ul{
+    margin: auto;
+    width: 80%;
+  } */
+
+.wrapperS .sidebar ul li a {
+  text-decoration: none;
+  background-color: #101010;
+  display: block;
+  padding: 8px; 
+  /* 20,10 */
+  padding-left: 16px;
+  border-radius: 0.5em;
+  margin: auto;
+  margin-bottom: -7px;
+  width: 130%;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  opacity: 0.6;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
