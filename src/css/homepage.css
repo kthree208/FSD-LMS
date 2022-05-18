@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+.bg {
+  /* background-image: url("../assets/cropped-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 1000px;
+  width: 100vw;
+  background-color: violet;
+}
+
+.wall {
+  background-image: url("../assets/slider1.jpg");
+  background-size: 100vw 750px;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 750px;
+  margin-top: -54px;
+  margin-left: -10px;
+  z-index: -5;
+}
+
+.heroHeading {
+  display: flex;
+  height: 630px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent ;
+  flex-direction: column;
+}
+
+.heroHeadingH1 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  font-weight:bolder;
+  letter-spacing: 1.5px;
+}
+
+.heroHeadingH3 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  /* font-family: "Sofia", sans-serif; */
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.heroHeadingButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #F19100;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 19px;
+  padding: 12px;
+  width: 170px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  
+}
+
+.heroHeadingButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heroHeadingButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.heroHeadingButton:hover span {
+  padding-right: 25px;
+  background-color: #F19100;
+}
+
+.heroHeadingButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.section2 {
+  background-image: url("../assets/section2.png");
+  background-size: 100vw 680px;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 680px;
+  /* margin-top: -54px;
+  margin-left: -10px; */
+  z-index: -5;
+  padding-top: 30em;
+}
+
+.flex-container {
+  display: flex;
+  /* background-color: #F19100; */
+  padding-left: 85px;
+  /* padding-right: 120px; */
+  justify-content: center;
+}
+
+.flex-container > div {
+  /* background-color: #f1f1f1; */
+  margin: 10px;
+  /* padding: 20px; */
+  font-size: 20px;
+  width: 15em;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 4em;
+  text-align: center;
+}
+
+.section3 {
+  height: 60px;
+  width: 100vw;
+  background-color: black;
+  color: #FFFFFF;
+}
