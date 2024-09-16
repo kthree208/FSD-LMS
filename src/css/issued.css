@@ -1,0 +1,340 @@
+.table{
+    --bs-table-hover-bg:#dae5f7;
+}
+th ,td{
+    vertical-align:middle;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+}
+h2 {color: #0a4870;
+    font-weight: 500;
+}
+/* .newcard {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+} */
+.cardsize{
+    max-height: 10vh;
+}
+.booking-card {
+    position: relative;
+    width: 300px ;
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-position: center center; */
+    /* background-size: cover; */
+    text-align: center;
+    color: #0a4870;
+    transition: 0.3s;
+}
+.booking-card::before {
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 72, 112, 0);
+    transition: 0.3s;
+}
+.booking-card .book-container {
+    height: 100px;
+}
+ .booking-card .book-container .content {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-200px);
+    transition: 0.3s;
+}
+ .booking-card .book-container .content .btn {
+    border: 3px solid white;
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ .booking-card .book-container .content .btn:hover {
+    background: white;
+    border: 0px solid white;
+    color: #0a4870;
+}
+ .booking-card .informations-container {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: #f0f0f0;
+    transform: translateY(206px);
+    transition: 0.3s;
+}
+ .booking-card .informations-container .title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+ .booking-card .informations-container .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+    background: #0a4870;
+}
+ .booking-card .informations-container .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+ .booking-card .informations-container .price .icon {
+    margin-right: 10px;
+}
+ .booking-card .informations-container .more-information {
+    opacity: 0;
+    transition: 0.3s;
+}
+ .booking-card .informations-container .more-information .info-and-date-container {
+    display: flex;
+}
+ .booking-card .informations-container .more-information .info-and-date-container .box {
+    flex: 1 0;
+    padding: 15px;
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+ .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+    margin-bottom: 5px;
+}
+ .booking-card .informations-container .more-information .info-and-date-container .box.info {
+    color: #ec992c;
+    margin-right: 10px;
+}
+ .booking-card .informations-container .more-information .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #7d7d7d;
+}
+ .booking-card:hover::before {
+    background: rgba(10, 72, 112, 0.6);
+}
+ .booking-card:hover .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+}
+ .booking-card:hover .informations-container {
+    transform: translateY(0px);
+}
+ .booking-card:hover .informations-container .more-information {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+     .booking-card::before {
+        background: rgba(10, 72, 112, 0.6);
+   }
+     .booking-card .book-container .content {
+        opacity: 1;
+        transform: translateY(0px);
+   }
+     .booking-card .informations-container {
+        transform: translateY(0px);
+   }
+     .booking-card .informations-container .more-information {
+        opacity: 1;
+   }
+}
+.credits {
+    display: table;
+    background: #0a4870;
+    color: white;
+    line-height: 25px;
+    margin: 10px auto;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.credits a {
+    color: #e3ebf1;
+}
+h1 {
+    margin: 10px 20px;
+}
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+.issuedBookHeading {
+  font-family: 'Orelega One', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+.bookDiv {
+    /* width: 100%;
+    height: 100vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    background: red;
+    margin-top: 20px; */
+    width: 23vw;
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    perspective: 1200px;
+    /* background: red; */
+    margin-top: 30px;
+    /* background-color: transparent; */
+    /* background-image: url("../assets/29-291213_rectangle-borders-png-transparent-png.png"); */
+    background-image: linear-gradient(to right, transparent,#ffffff, #ffffff,#ffffff,#b9b9b9, #3b3b3b, #3b3b3b,black);
+    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px); */
+  }
+  
+  .book {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    backface-visibility: visible;
+  }
+
+  .book:hover {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    backface-visibility: visible;
+    box-shadow: 10px 10px black;
+  }
+  
+  .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    /* width: 200px;
+    height: 100%; */
+    width: 150px;
+    height: 70%;
+    top: 0; left: 0;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+  }
+  
+  .front, .back {
+    background: navy;
+    background-image: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052.jpg");
+    background-size : contain ;
+  }
+  
+  .front, .page1, .page3, .page5 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .back, .page2, .page4, .page6 {
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: .5em;
+  }
+  
+  .page1 { 
+    background: #efefef;
+  }
+  
+  .page2 {
+    background: #efefef;
+  }
+  
+  .page3 {
+    background: #f5f5f5;
+  }
+  
+  .page4 {
+    background: #f5f5f5;
+  }
+  
+  .page5 {
+    background: #fafafa;
+  }
+  
+  .page6 {
+    background: #fdfdfd;
+  }
+  
+  .book:hover .front {
+    transform: rotateY(-160deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .page1 {
+    transform: rotateY(-150deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .page2 {
+    transform: rotateY(-30deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .page3 {
+    transform: rotateY(-140deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .page4 {
+    transform: rotateY(-40deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .page5 {
+    transform: rotateY(-130deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .page6 {
+    transform: rotateY(-50deg) scale(1.1);
+    box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  }
+  
+  .book:hover .back {
+    transform: rotateY(-20deg) scale(1.1);
+  }
+  .returnButton {
+      size: 20px;
+      background-color: darkblue;
+      color: white;
+  }

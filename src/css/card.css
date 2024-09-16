@@ -1,0 +1,83 @@
+.card {
+    width: 170px;
+    height: 15rem;
+    transition: transform .2s;
+    margin: 20px 10px 20px 10px;
+    border-radius: 2rem;
+    
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.card:hover .image {
+    opacity: 0.3;
+    
+}
+
+.card:hover .card-body {
+    opacity: 0.82;
+    background-color: black;   
+}
+
+.tops {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-right: 25px;
+}
+
+.category {
+    text-align: justify;
+    margin-bottom: -8px;
+    font-family: 'Orelega One', cursive;
+    /* font-weight: bold; */
+    font-size: 2em;
+
+}
+
+.row li {
+    margin-right: -10px;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.card-body {
+    width: 170px;
+    height: 15rem;
+    /* padding: 2px;
+    margin-top: 10px; */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    letter-spacing: 1px;
+    
+
+}
+
+.card-text {
+    margin-top: -10;
+    text-align: right;
+    color: white;
+    opacity: 0.7;
+    /* align-self: baseline; */
+}
+
+.card-img-top {
+    border-radius: 2rem;
+}
+
+.card-title {
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
